@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
+body {
+    background-image: url("../img/fondologin.jpg");
+    overflow-y: hidden;
+    background-position: 55%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+}
+
+#encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: "Nosifer", cursive;
+    font-size: 2rem;
+}
+
+input {
+    text-align: center;
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid black !important;
+    border-radius: 0px !important;
+}
+
+button {
+    border: 1px outset black !important;
+    background-color: black !important;
+}

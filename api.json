@@ -1,0 +1,48 @@
+[{
+        "id": 1,
+        "nombre": "Cordoba",
+        "img": "https://picsum.photos/id/230/200/300",
+        "precio": 2000,
+        "excurciones": [
+            "gral belgrano", "calamuchita", "Astroturismo", "Vinotecas"
+        ]
+    },
+
+    {
+        "id": 2,
+        "nombre": "Mendoza",
+        "img": "https://picsum.photos/id/236/200/300",
+        "precio": 2250,
+        "excurciones": [
+            "Vinotecas", "valle de uco", " Cañon del Atuel", "Alta montaña"
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "Neuquen",
+        "img": "https://picsum.photos/id/235/200/300",
+        "precio": 3500,
+        "excurciones": [
+            "Sola", "Con Queso", "Lechuga y Tomate", "Completa"
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "San Luis",
+        "img": "https://picsum.photos/id/234/200/300",
+        "precio": 2750,
+        "excurciones": [
+            "Coca", "Sprite", "Fanta", "Agua"
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "Salta",
+        "img": "https://picsum.photos/id/229/200/300",
+        "precio": 3000,
+        "excurciones": [
+            "Coca", "Sprite", "Fanta", "Agua"
+        ]
+    }
+
+]

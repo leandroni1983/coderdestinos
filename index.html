@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+    <!-- mis links -->
+    <link rel="stylesheet" href="./css/cuerpo.css" />
+    <script defer src="./js/login.js"></script>
+    <script defer src="./js/main2.js"></script>
+
+    <title>carrito</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a id="login" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-fluid">
+      <h1>Destinos disponibles</h1>
+      <div id="template-card" class="pepe"></div>
+    </div>
+
+    <div class="container">
+      <!-- <h4>Carrito de compras</h4> -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item</th>
+            <th scope="col">Noches</th>
+            <th scope="col">Personas</th>
+            <th scope="col">Check In</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody id="items"></tbody>
+        <tfoot>
+          <tr id="footer">
+            <th scope="row" colspan="5">Seleccione su Destino!</th>
+          </tr>
+        </tfoot>
+      </table>
+     
+<!-- aca pinto los destinos -->
+    <template id="temp">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <img src="..." class="card-img-top" alt="..." />
+          <p class="card-text">
+            <span>Noche: $<strong id="precio"></strong></span>
+          </p>
+          <a href="#" class="btn btn-primary">Seleccionar destino</a>
+        </div>
+      </div>
+    </template>
+
+<!-- intento pintar los seleccionados -->
+    <template id="template-carrito">
+      <tr>
+        <th scope="row" >id</th>
+        <td>Destino</td>
+        <td id="noche">
+          <button class="btn btn-info btn-sm">+</button>
+          <span>1</span>
+          <button class="btn btn-danger btn-sm">-</button>
+        </td>
+        <td id="persona">
+          <button class="btn btn-info btn-sm">+</button>
+          <span>1</span>
+          <button class="btn btn-danger btn-sm">-</button>
+        </td>
+        <td><input type="date">
+        </td>
+        <td>$ <span>500</span></td>
+      </tr>
+    </template>
+
+<!-- template footer precio final etc -->
+    <template id="template-footer">
+      <th scope="row" colspan="2">Total</th>
+
+      <td class="font-weight-bold">$ <span>5000</span></td>
+      
+      <td>
+        <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+          vaciar
+        </button>
+      </td>
+    </template> 
+  </div>
+
+<!-- Modal Logeo -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h1>Logeate</h1>
+
+            <form id="form" class="col text-center align-self-center">
+                <div class="mb-3">
+                    <input type="name" class="form-control-lg" id="inputName" aria-describedby="nameHelp" placeholder="Ingresa tu Usuario" required />
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control-lg" id="inputPassword" placeholder="Ingresa tu Password" required />
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Registrarte</button>
+                  <button type="submit" class="btn btn-success ">Ingresar</button>
+                </div>
+            </form>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+
+<!-- logeo completo dropDown -->
+<template id="dropDown">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="navbar-nav navbar-brand">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle navbar-brand" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Usuario
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Carrito</a></li>
+              <li><a class="dropdown-item" href="#">Cuenta</a></li>
+              <li><a class="dropdown-item" href="#">Salir</a></li>
+            </ul>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+</template>
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>

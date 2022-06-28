@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
+h1 {
+    text-align: center;
+    font-family: "Nosifer", cursive;
+    font-size: 3rem;
+}
+
+.card {
+    width: 14rem;
+    border: none;
+}
+
+.pepe {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+.pepe img {
+    border-radius: 20px;
+}
