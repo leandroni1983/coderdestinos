@@ -23,8 +23,8 @@ function meLogeo(e) {
 
 
 const navBarLogin = () =>{
-    if(sessionStorage.getItem('user')){
-    dropDown.querySelectorAll('a')[0].textContent = sessionStorage.getItem('user')
+    if(localStorage.getItem('user')){
+    dropDown.querySelectorAll('a')[0].textContent = localStorage.getItem('user')
     const clone = dropDown.cloneNode(true)
     log.parentElement.appendChild(clone)
     log.remove()
@@ -38,7 +38,7 @@ const loginUser = () => {
     let cont = document.getElementById("inputPassword").value;
     if (name !== "" && cont != "") {
         if (name == user && cont == pass) {
-            sessionStorage.setItem("user", user);
+            localStorage.setItem("user", user);
             navBarLogin()
         } else {
             alert("usuario o password incorrectos");
