@@ -45,3 +45,8 @@ const loginUser = () => {
         }
     }   
 };
+
+
+document.addEventListener("DOMContentLoaded", () => {
+   navBarLogin()
+});
