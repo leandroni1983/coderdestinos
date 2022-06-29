@@ -113,7 +113,7 @@ const pintarFooter = ()=>{
     footer.innerHTML= ''
     if(Object.keys(carrito).length === 0){
         footer.innerHTML = `
-        <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+        <th scope="row" colspan="5">Seleccione sus destinos!</th>
         `
         return
     }
@@ -127,7 +127,9 @@ const pintarFooter = ()=>{
     let vaciarCarrito = document.querySelector('#vaciar-carrito');
     vaciarCarrito.addEventListener('click',()=>{
         carrito = {}
+        localStorage.removeItem('miCarro')
         pintarCarrito()
+
     })
     localStorage.setItem('miCarro',JSON.stringify(carrito))
 }
