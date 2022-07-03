@@ -23,7 +23,7 @@
         "img": "https://picsum.photos/id/235/200/300",
         "precio": 3500,
         "excurciones": [
-            "Sola", "Con Queso", "Lechuga y Tomate", "Completa"
+            "Vinotecas", "valle de uco", " Cañon del Atuel", "Alta montaña"
         ]
     },
     {
@@ -32,7 +32,7 @@
         "img": "https://picsum.photos/id/234/200/300",
         "precio": 2750,
         "excurciones": [
-            "Coca", "Sprite", "Fanta", "Agua"
+            "Vinotecas", "valle de uco", " Cañon del Atuel", "Alta montaña"
         ]
     },
     {
@@ -41,7 +41,7 @@
         "img": "https://picsum.photos/id/229/200/300",
         "precio": 3000,
         "excurciones": [
-            "Coca", "Sprite", "Fanta", "Agua"
+            "Vinotecas", "valle de uco", " Cañon del Atuel", "Alta montaña"
         ]
     }
 

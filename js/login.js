@@ -54,15 +54,23 @@ const loginUser = () => {
             localStorage.setItem("user", user);
             navBarLogin()
         } else {
-            alert("usuario o password incorrectos");
+            swa() // libreria Sweet Alert
         }
     }   
 };
 
-// log.addEventListener('click',(e)=>{
-//     console.log(e)
-// })
 
+const swa = ()=>{
+    Swal.fire({
+        title: 'Error!',
+        position:'top-center',
+        text: 'Corrobore Usuario y/o Contraseña ',
+        icon: 'question',
+        confirmButtonText: 'Ouch',
+      })
+      
+}
 document.addEventListener("DOMContentLoaded", () => {
-   navBarLogin()
-});
+    navBarLogin()
+ });
+ 

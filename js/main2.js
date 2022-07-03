@@ -25,12 +25,11 @@ let carrito = {}
 //cargo la funcion al inicio si tengo el carro en el local storage llamo a funcion
 document.addEventListener("DOMContentLoaded", () => {
     fetchData()
-    if(localStorage.getItem('miCarro')){
-        carrito = JSON.parse(localStorage.getItem('miCarro'))
-        pintarCarrito()
-    }
+     if(localStorage.getItem('miCarro')){
+         carrito = JSON.parse(localStorage.getItem('miCarro'))
+         pintarCarrito()
+     }
 });
-
 
 // traigo la info desde en este caso el archivo api.json
 const fetchData = async() => {
@@ -58,12 +57,13 @@ function printCards(data) {
 
 // capturo el btn y busco el elemento padre donde tengo toda la info
 function addCarrito(e) {
-    if (e.target.classList.contains('btn-primary')) {
+    e.target.classList.contains('btn-primary')?reserva(e.target.parentElement):e.stopPropagation()
+    // if (e.target.classList.contains('btn-primary')) {
 
-        reserva(e.target.parentElement)
+    //     reserva(e.target.parentElement)
       
-    }
-    e.stopPropagation()
+    // }
+    // e.stopPropagation()
 }
 
 function reserva(e) {
