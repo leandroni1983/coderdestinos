@@ -11,6 +11,7 @@ navbar.addEventListener('click',(e)=>{
 })
 const logOutNavBar = ()=>{
     localStorage.removeItem('user')
+    localStorage.removeItem('miCarro')
     navBarLogin()
     location.reload()
 }
@@ -65,7 +66,7 @@ const swa = ()=>{
         title: 'Error!',
         position:'top-center',
         text: 'Corrobore Usuario y/o Contraseña ',
-        icon: 'question',
+        icon: 'error',
         confirmButtonText: 'Ouch',
       })
       

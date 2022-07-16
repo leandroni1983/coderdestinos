@@ -35,9 +35,9 @@
       <h1>Destinos disponibles</h1>
       <div id="template-card" class="pepe"></div>
     </div>
-
+     <!-- <h4>Carrito de compras</h4> -->
     <div class="container">
-      <!-- <h4>Carrito de compras</h4> -->
+     
       <table class="table">
         <thead>
           <tr>
@@ -45,7 +45,6 @@
             <th scope="col">Item</th>
             <th scope="col">Noches</th>
             <th scope="col">Personas</th>
-            <th scope="col">Check In</th>
             <th scope="col">Total</th>
           </tr>
         </thead>
@@ -56,7 +55,7 @@
           </tr>
         </tfoot>
       </table>
-     
+    </div>
 <!-- aca pinto los destinos -->
     <template id="temp">
       <div class="card">
@@ -86,8 +85,6 @@
           <span>1</span>
           <button class="btn btn-danger btn-sm">-</button>
         </td>
-        <td><input type="date">
-        </td>
         <td>$ <span>500</span></td>
       </tr>
     </template>
@@ -100,11 +97,16 @@
       
       <td>
         <button class="btn btn-danger btn-sm" id="vaciar-carrito">
-          vaciar
+          Eliminar Destino
+        </button>
+      </td>    
+      <td>
+        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#confirmo-carrito">
+          Confirmar Destino
         </button>
       </td>
     </template> 
-  </div>
+ 
 
 <!-- Modal Logeo -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -158,6 +160,24 @@
 
 
 </template>
+
+<!-- confirmo carrito  -->
+<div class="modal fade" id="confirmo-carrito" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h1>Confirmado</h1>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
